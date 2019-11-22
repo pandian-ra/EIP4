@@ -37,7 +37,7 @@ Epoch 00017: LearningRateScheduler setting learning rate to 0.000491481. 60000/6
 
 Epoch 00018: LearningRateScheduler setting learning rate to 0.0004670715. 60000/60000 [==============================] - 22s 361us/step - loss: 0.0308 - acc: 0.9908 - val_loss: 0.0192 - val_acc: 0.9940 <keras.callbacks.History at 0x7f1cabf01128>
 
-### 2. model.evaluate : [0.0181614178378135, 0.9947]
+### 2. model.evaluate : [0.019243195453239603, 0.994]
 ### 3. Stretegy:
 1. I've used Dropout after every convolution except at the last layer. The accuracy has been increased when I don't use dropout at the last layer and i believe the reason is at the last layer, we need to preserve the weights at the last layer for better decisions.
 2. I used a 3x3 convolution followed by 1x1 convolution as a batch inspired by ResNet Arch. Which decreased the parameters and also increased accuracy.
